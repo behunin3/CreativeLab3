@@ -27,7 +27,7 @@ const About = () => {
                     
                 </table>
             </div>
-  <footer>My Footer goes here</footer>
+  <footer><a href="https://github.com/behunin3/CreativeLab3">https://github.com/behunin3/CreativeLab3</a></footer>
   </div>;
 };
 
