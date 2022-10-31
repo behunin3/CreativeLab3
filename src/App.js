@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Purchase from "./pages/purchaseDetails";
 import About from "./pages/About";
 import NoPage from "./pages/NoPage";
+import './index.css';
 
 export default function App() {
   return (

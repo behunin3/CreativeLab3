@@ -1,4 +1,5 @@
 import budgeting from './images/budgeting.jpg'
+import '../index.css';
 
 const Home = () => {
   return <div>

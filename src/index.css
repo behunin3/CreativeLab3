@@ -1,3 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /*background-color: #3CB371; /*medium sea green*/
+    background-image: linear-gradient(to bottom right, #3CB371, yellow);
+    
+}
+.navBar {
+    display: flex;
+    wrap: nowrap;
+}
+
+.navItem {
+    width: 200px;
+    height: 50px;
+}
+
+body {
+    background-color: #FFFAF0; /*floral white*/
+}
+
+h1 {
+    padding: 5px;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.content {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+.content-item {
+    
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subflex {
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+.subflex-item {
+    flex: 40%;
+    border: 1px solid #3CB371;
+    margin: 5px;
+    padding: 5px;
+    word-break: keep-all;
+    
+}
+
+.subflex-item:hover {
+    box-shadow: 5px 5px 5px #2E8B57;
+    border: 2px solid #3CB371;
+}
+
+
+/*mobile screens*/
+@media only screen and (max-width: 400px) {
+    .content {
+        width: 400px;
+        margin: auto;
+        overflow: hidden;
+        word-break: keep-all;
+    }
+    .content-item {
+        width: 370px;
+    }
+    
+    
+    .subflex-item {
+        flex: 100%;
+        flex-direction: column;
+        margin: 5px;
+        height: 300px;
+        width: 395px;
+        
+    }
+    
+}
+
+/*tablet screens*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .content {
+        width: 600px;
+        margin: auto;
+    }
+    
+    .content-item {
+        
+    }
+    
+    .subflex-item {
+        flex: 40%;
+        margin: 20px;
+        height: 300px;
+    }
+}
+
+/*desktop screens*/
+@media only screen and (min-width: 961px) {
+    .content {
+        width: 1300px;
+        margin: auto;
+    }
+    
+    .content-item {
+        
+    }
+    
+    .subflex-item {
+        flex: 20%;
+        margin: 20px;
+        height: 300px;
+        
+    }
+}
+
+#subflex-item1 {
+    /*background-image: url(piechart.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    
+    
+}
+
+#subflex-item2 {
+    /*background-image: url(writing.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#subflex-item3 {
+    /*background-image: url(shagandscoob.png);*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.subflex-child {
+   background-color: white;
+}
+
+
+/*table css stuff*/
+#budget {
+    width: 99%;
+    margin: 5px;
+}
+/*#aboutTable {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.td {
+    border: 1px solid #3CB371;
+    padding: 5px;
+}
+
+#budget td, #budget th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#budget tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#budget th {
+    background-image: linear-gradient(#2E8B57, #3CB371);
+    color: white;
+}
+
+#budget tr:hover {
+    background-color: #ddd;
+}
+
+#budget tr:last-child {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    position: sticky;
+}
+
+/*edit table button*/
+.budget-add {
+    float: right;
+    margin-right: 10px;
+    
+    margin-bottom: 20px;
+    background-color: #3CB371;
+    color: white;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+/*mobile screen for table button*/
+@media only screen and (max-width: 400px) {
+    .budget-add {
+        margin-right: 30px;
+    }
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +231,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
